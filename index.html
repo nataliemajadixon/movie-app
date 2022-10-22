@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Movies</h1>
-    </div>
-
-    <div>
-        <input placeholder="Enter a move title" value="" id="inputText"/><button id="searchButton" onClick="getMovies()">Search</button>
+    <div class="top_bar">
+        
+        <h2 id="movieheader" >Movies</h2>
+        <img class="popcorn" src="https://images.pexels.com/photos/255377/pexels-photo-255377.jpeg?auto=compress&cs=tinysrgb&w=800">
+   
     </div>
     
-    <section id="movie-container"></section>
+        
+    <div class="movie">
+    </div>
 
+    <div id="search_bar">
+        <input autocomplete="off" placeholder="Enter a movie title" value="" id="inputText"/> <button onClick= "getMovies()" id="searchButton" >Search</button>
+        <button onClick="window.location.reload()">Reset</button>
+    </div>
+    <main>
+    <section id="movie-container">
+
+
+    </section>
+
+    </main>
 
 
 
